@@ -1,7 +1,6 @@
 # nvim
 
 ```
-mkdir ~/.config/nvim
-cd ~/.config/nvim
+cd ~/.config
 git clone https://github.com/liuchangfgv/nvim
 ```

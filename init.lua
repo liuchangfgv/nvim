@@ -1,6 +1,6 @@
+require("plugins.plugins-setup")
 require("core.options")
 require("core.keymap")
-require("plugins.plugins-setup")
 require('lualine').setup()
 require("nvim-tree").setup()
 require'nvim-treesitter.configs'.setup {
@@ -21,7 +21,6 @@ require("mason").setup({
 })
 
 require("mason-lspconfig").setup({
-  -- 确保安装，根据需要填写
   ensure_installed = {
     "lua_ls",
     "clangd"
@@ -42,9 +41,7 @@ vim.opt.termguicolors = true
 
 require("bufferline").setup {
     options = {
-        -- 使用 nvim 内置lsp
         diagnostics = "nvim_lsp",
-        -- 左侧让出 nvim-tree 的位置
         offsets = {{
             filetype = "NvimTree",
             text = "File Explorer",
